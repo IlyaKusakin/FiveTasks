@@ -3,6 +3,8 @@ Module with functions for validation and
 transformation of dict with features.
 
 """
+from datetime import datetime
+
 from .features_config import cat_features, cont_features
 from .features_config import cat_labels_dict, check_types_dict
 
@@ -23,7 +25,9 @@ def features_validation(feature_vector: dict) -> int :
     200: if features are OK
 
     """
-    print('"features_validation" function was called')
+    time = datetime.now().strftime("%d-%m-%Y %H:%M:%S") 
+    print('{} | INFO | "features_validation" function was called'.format(time))
+    
     for feature in cat_features + cont_features:
         if feature not in feature_vector.keys():
             return 401
@@ -55,7 +59,9 @@ def transform_to_vector(feature_vector: dict) -> list :
         DESCRIPTION: list with features for RandomForestClassifier
 
     """
-    print('"transform_to_vector" function was called')
+    time = datetime.now().strftime("%d-%m-%Y %H:%M:%S") 
+    print('{} | INFO | "transform_to_vector" function was called'.format(time))
+    
     features = []
     for feature in cat_features:
         value = feature_vector[feature]

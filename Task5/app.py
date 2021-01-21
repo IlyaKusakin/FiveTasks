@@ -5,6 +5,7 @@ Main module with Flask application and routes.
 import os
 import json
 import pickle
+from datetime import datetime
 
 from flask import Flask
 from flask import request
@@ -18,18 +19,21 @@ with open(r'models\classifier.pkl', 'rb') as clf:
     clf.close()
 
 
-@application.route('/', methods=['GET'])
+@application.route('/hello_world', methods=['GET'])
 def hello_world():
-    print('"hello_world" route was called')
-    resp = {'message': 'Hello World!'}
+    time = datetime.now().strftime("%d-%m-%Y %H:%M:%S") 
+    print('{} | INFO | "hello_world" route was called'.format(time))
+    
+    resp = {'result': 'hello_world'}
     response = jsonify(resp)
-
     return response
 
 
 @application.route('/calc_proba', methods=['POST'])
 def calc_proba():
-    print('"calc_proba" route was called')
+    time = datetime.now().strftime("%d-%m-%Y %H:%M:%S") 
+    print('{} | INFO | "calc_proba" route was called'.format(time))
+    
     response = {
         'status': None,
         'error_code': None,

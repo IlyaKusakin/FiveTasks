@@ -26,50 +26,50 @@ pytest function_tests.py
 python app.py
 ```
 ### Input cases with outputs
-Input case1 
+Case1: normal input 
 ```
+input
 {
  "age": 40, 
  "month": "mar", 
  "job": "student", 
  "nr.employed": 5000
- }
-```
-output
-```
+}
+
+output 
 {
     "error_code": null,
     "proba": 0.71,
     "status": 200
 }
 ```
-Input case2
+Case2: missed necessary "month" field
 ```
+input
 {
 "age": 40, 
 "job": "student", 
 "nr.employed": 5000
 }
- ```
- output
- ```
+
+output
 {
     "error_code": "incorrect fields",
     "proba": null,
     "status": 401
 }
 ```
-Input case3
+Case3: incorrect type of "age"
 ```
+input
 {
 "age": "twenty",
 "month": "mar", 
  job": "student",
  "nr.employed": 5000
  }
- ```
- output
- ```
+ 
+output
 {
     "error_code": "incorrect format",
     "proba": null,

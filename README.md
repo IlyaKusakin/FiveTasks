@@ -19,6 +19,7 @@ pip install -r requirements.txt
 ```
 pytest function_tests.py
 ```
+![](https://github.com/IlyaKusakin/FiveTasks/blob/main/Task5/images/tests_screen.jpg)
 ### Run to start application
 ```
 python app.py

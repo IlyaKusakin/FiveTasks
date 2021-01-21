@@ -25,4 +25,54 @@ pytest function_tests.py
 ```
 python app.py
 ```
-
+### Input cases with outputs
+Input case1 
+```
+{
+ "age": 40, 
+ "month": "mar", 
+ "job": "student", 
+ "nr.employed": 5000
+ }
+```
+output
+```
+{
+    "error_code": null,
+    "proba": 0.71,
+    "status": 200
+}
+```
+Input case2
+```
+{
+"age": 40, 
+"job": "student", 
+"nr.employed": 5000
+}
+ ```
+ output
+ ```
+{
+    "error_code": "incorrect fields",
+    "proba": null,
+    "status": 401
+}
+```
+Input case3
+```
+{
+"age": "twenty",
+"month": "mar", 
+ job": "student",
+ "nr.employed": 5000
+ }
+ ```
+ output
+ ```
+{
+    "error_code": "incorrect format",
+    "proba": null,
+    "status": 402
+}
+```

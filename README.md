@@ -37,10 +37,10 @@ Case1: normal input
 ```
 input
 {
- "age": 40, 
- "month": "mar", 
- "job": "student", 
- "nr.employed": 5000
+  "age": 40, 
+  "month": "mar", 
+  "job": "student", 
+  "nr.employed": 5000
 }
 
 output 
@@ -54,9 +54,9 @@ Case2: missed necessary "month" field
 ```
 input
 {
-"age": 40, 
-"job": "student", 
-"nr.employed": 5000
+  "age": 40, 
+  "job": "student", 
+  "nr.employed": 5000
 }
 
 output
@@ -70,11 +70,11 @@ Case3: incorrect type of "age"
 ```
 input
 {
-"age": "twenty",
-"month": "mar", 
- "job": "student",
- "nr.employed": 5000
- }
+  "age": "twenty",
+  "month": "mar", 
+   "job": "student",
+   "nr.employed": 5000
+}
  
 output
 {

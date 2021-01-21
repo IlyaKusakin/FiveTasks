@@ -8,6 +8,7 @@
 [Notebook](https://github.com/IlyaKusakin/FiveTasks/blob/main/Task3_regression.ipynb) with regression research.
 ## Task4
 [Notebook](https://github.com/IlyaKusakin/FiveTasks/blob/main/Task4_segmentation.ipynb) with group segmentation and clusters analysis
+![](https://github.com/IlyaKusakin/FiveTasks/blob/main/Task5/images/groups.jpg)
 ## [Task 5](https://github.com/IlyaKusakin/FiveTasks/tree/main/Task5)
 Flask application for probability predicting. 
 

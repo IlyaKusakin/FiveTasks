@@ -72,7 +72,7 @@ input
 {
 "age": "twenty",
 "month": "mar", 
- job": "student",
+ "job": "student",
  "nr.employed": 5000
  }
  

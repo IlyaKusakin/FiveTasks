@@ -1,7 +1,7 @@
 ## Task 1
 [File](https://github.com/IlyaKusakin/FiveTasks/blob/main/Task1_product%20analysis.pdf) with product analysis.
 ## Task 2
-[Notebook]https://github.com/IlyaKusakin/FiveTasks/blob/main/Task2_classification/Task2_classification.ipynb) with classification research. 
+[Notebook](https://github.com/IlyaKusakin/FiveTasks/blob/main/Task2_classification/Task2_classification.ipynb) with classification research. 
 [File](https://github.com/IlyaKusakin/FiveTasks/blob/main/Task2_classification/task2_result.xlsx) with predicted labels for test dataset.
 ![](https://github.com/IlyaKusakin/FiveTasks/blob/main/Task5/images/ROC_curve.jpg)
 ## Task 3
